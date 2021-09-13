@@ -13,7 +13,7 @@ public class Consumer_1 {
 
         int i = 0;
 
-        StreamEntryID lastID = new StreamEntryID(0, 0);
+        StreamEntryID lastID = new StreamEntryID(System.currentTimeMillis(), 0);
         Map.Entry<String, StreamEntryID> query = null;
         while(i < 10){
             query = new AbstractMap.SimpleEntry("messages", lastID);
